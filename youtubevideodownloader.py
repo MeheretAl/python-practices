@@ -21,8 +21,8 @@ def download(videos,video_resolutions):
             #[choice-1] because python list indexes start from 0 and we started from 1
             resolutions_to_download = video_resolutions[choice -1]
             print(f"Downloading the video with download resolution {resolutions_to_download} ...")
-            #same reason as the above comment
-            videos[choice-1].download()
+            #added a custom path for my downloads
+            videos[choice-1].download(output_path = '/home/mhri/Youtube')
 
             print("\nVideo was successfully downloaded.")
             break
@@ -36,7 +36,7 @@ def get_resolutions_and_extensions(link):
     videos = []
 
 
-    for streams in my_video.streams.order_by('resolution').filter(only_video=True,adaptive=True):
+    for streams in my_video.streams.order_by('resolution').filter(only_video=True,adaptive=True,mime_type='video/mp4'):
         video_resolutions.append(streams.resolution)
         videos.append(streams)
     
@@ -59,3 +59,5 @@ download(videos,video_resolutions)
 #2)add option to try again if user makes a mistake
 #3)add option to download more than one video at the same time
 #4)custom messsage for other exceptions
+#5)Turn into GUI
+#6)use OOP
