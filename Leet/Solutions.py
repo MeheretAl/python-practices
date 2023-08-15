@@ -19,5 +19,3 @@ class Solutions:
                 right = mid
             else:
                 return mid
-            
-    def 
