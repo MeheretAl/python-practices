@@ -25,7 +25,6 @@ class Solutions:
         prefix = strs[0]
         for s in strs:
             prefix = prefix if len(prefix) < len(s) else s
-        
         for i in range(len(prefix)):
             for s in strs:
                 if i == len(s) or s[i] != prefix[i]:
@@ -47,3 +46,12 @@ class Solutions:
                 res += dict[nums[i]]
         
         return res
+    
+    def search2dMatrix(self,matrix:list[list[int]],target:int) -> bool:
+        arr = []
+        for i in matrix:
+            for j in i:
+                arr.append(j)
+        #there is a better way to do this with binary search on the 2D matrix itself
+        #i just converted the 2D matrix into a one dimensional array then searched through that list
+        return False if target not in arr else True
