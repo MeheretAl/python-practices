@@ -1,4 +1,4 @@
-def longestCommonPrefix(self, strs:list[str]) -> str:
+def longestCommonPrefix(strs:list[str]) -> str:
         res = ""
         prefix = strs[0]
         for s in strs:

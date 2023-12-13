@@ -1,4 +1,4 @@
-def search2dMatrix(self,matrix:list[list[int]],target:int) -> bool:
+def search2dMatrix(matrix:list[list[int]],target:int) -> bool:
         arr = []
         for i in matrix:
             for j in i:

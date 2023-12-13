@@ -1,4 +1,4 @@
-def searchRange(self,nums:list[int],target:int) -> list[int]:
+def searchRange(nums:list[int],target:int) -> list[int]:
         left_most,right_most = -1,-1
         left,right = 0, len(nums) - 1
         while (left <= right):

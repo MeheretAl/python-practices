@@ -1,4 +1,4 @@
-def binarysearch(self,my_list:list[int],target:int):
+def binarysearch(my_list:list[int],target:int):
         left,right = 0 , len(my_list)
         while left < right:
             mid = (left +right)//2
