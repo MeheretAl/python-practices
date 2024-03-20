@@ -1,4 +1,4 @@
-def goodpairs(nums:list[int]) -> int:
+def goodpairs(nums: list[int]) -> int:
     dict1 = {}
     counter = 0
     for i in range(len(nums)):
