@@ -9,3 +9,4 @@ def goodpairs(nums: list[int]) -> int:
             dict1[nums[i]] = 1
 
     return counter
+print()
