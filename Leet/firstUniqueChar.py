@@ -8,7 +8,6 @@ def firstUniqChar(s: str) -> int:
             freq[char] = 1
             indexHold[char] = s.index(char)
 
-
     for char in freq:
         if freq[char] == 1:
             return indexHold[char]
