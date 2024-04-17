@@ -8,7 +8,7 @@ def countSort(arr : list[int]):
     for i in range(maxValue+1):
         while(freq[i] > 0):
             arr[index] = i
-            index+=1;
+            index+=1
             freq[i]-=1
 
     print(arr)
