@@ -2,4 +2,4 @@ test.*
 .vscode/
 tests/
 .idea/
-*.gitignore
+.gitignore
